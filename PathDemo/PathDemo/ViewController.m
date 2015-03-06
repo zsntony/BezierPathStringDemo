@@ -36,6 +36,7 @@
 {
     if (_txtField.text.length > 0)
     {
+        //贝尔兹曲线
         UIBezierPath *path = [UIBezierPath zjBezierPathWithText:_txtField.text attributes:self.attrs];
         self.shapeLayer.bounds = CGPathGetBoundingBox(path.CGPath);
         self.shapeLayer.path = path.CGPath;
